@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShowFlake</string>
+    <string name="search_hint">Search...</string>
+    <string name="retry">Retry\n</string>
+    <string name="description">Description</string>
+    <string name="similar_shows_title">You may also like</string>
+</resources>
