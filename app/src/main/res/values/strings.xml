@@ -4,4 +4,5 @@
     <string name="retry">Retry\n</string>
     <string name="description">Description</string>
     <string name="similar_shows_title">You may also like</string>
+    <string name="something_went_wrong">Something went wrong</string>
 </resources>

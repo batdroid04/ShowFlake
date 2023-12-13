@@ -283,7 +283,10 @@ fun MyApp(navigation: NavController, viewModel: MainViewModel) {
                 if (searchQuery.isNotEmpty())
                     viewModel.searchContent(searchQuery) else viewModel.getTrending()
             }
-            TrendingMoviesGrid(navigation, trendingMovies.results, viewModel)
+            if (trendingMovies.results.isNullOrEmpty())
+                ErrorView(stringResource(R.string.something_went_wrong)) {
+                    viewModel.getTrending()
+                } else TrendingMoviesGrid(navigation, trendingMovies.results, viewModel)
         }
     }
 }
